@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Project Generator</h1>
+    <div id="form">
+        <p>Want to practice your JavaScript skills? Let's generate a project that matches
+            your level, interests, and learning goals.</p>
+
+        <form>
+            <fieldset>
+                <legend>Select Theme</legend>
+                <label for="theme"></label>
+                <input id="theme" type="text" placeholder="Enter a theme for the project.">
+            </fieldset>
+            <fieldset>
+                <legend>Select Difficulty</legend>
+                <div>
+                    <input type="radio" id="easy" name="difficulty" value="easy"/>
+                    <label for="easy">Easy</label>
+
+                    <input type="radio" id="medium" name="difficulty" value="medium" />
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" id="hard" name="difficulty" value="hard" />
+                    <label for="hard">Hard</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Learning Goal</legend>
+                <input id="dom" type="radio" name="learning-goals">
+                <label for="dom">Working with the DOM</label>
+
+                <input id="visualisation" type="radio" name="learning-goals">
+                <label for="visualisation">Visualisation in JavaScript</label>
+
+                <input id="functions" type="radio" name="learning-goals">
+                <label for="functions">Functions in JavaScript</label>
+
+                <input id="async" type="radio" name="learning-goals">
+                <label for="async">Asynchronicity</label>
+
+                <input id="api" type="radio" name="learning-goals">
+                <label for="api">Data from API</label>
+            </fieldset>
+
+        </form>
+
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <div id="answer">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
